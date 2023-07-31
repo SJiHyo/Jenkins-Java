@@ -43,3 +43,14 @@ CREATE TABLE products (
     count INT NOT NULL,
     PRIMARY KEY (product_id)
 );
+
+CREATE TABLE cart(
+	cart_id INT NOT NULL AUTO_INCREMENT,
+    customer_id INT NOT NULL,
+    title VARCHAR(255) NOT NULL,
+    image VARCHAR(255) NOT NULL,
+    price FLOAT NOT NULL,
+    category VARCHAR(100) NOT NULL,
+    total FLOAT NOT NULL,
+    PRIMARY KEY (cart_id)
+);

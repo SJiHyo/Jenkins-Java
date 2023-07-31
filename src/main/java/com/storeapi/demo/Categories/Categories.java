@@ -8,37 +8,30 @@ public class Categories {
 	
 	@Id
 	private int CategoryId;
-	private String CategoryName;
-	
+	private String Category;
 	public Categories() {
-		
-	}
 
-	public Categories(int categoryId, String categoryName) {
+	}
+	public Categories(int categoryId, String category) {
 		super();
 		CategoryId = categoryId;
-		CategoryName = categoryName;
+		Category = category;
 	}
-
 	public int getCategoryId() {
 		return CategoryId;
 	}
-
 	public void setCategoryId(int categoryId) {
 		CategoryId = categoryId;
 	}
-
-	public String getCategoryName() {
-		return CategoryName;
+	public String getCategory() {
+		return Category;
 	}
-
-	public void setCategoryName(String categoryName) {
-		CategoryName = categoryName;
+	public void setCategory(String category) {
+		Category = category;
 	}
-
 	@Override
 	public String toString() {
-		return "Categories [CategoryId=" + CategoryId + ", CategoryName=" + CategoryName + "]";
+		return "Categories [CategoryId=" + CategoryId + ", Category=" + Category + "]";
 	}
 	
 }
