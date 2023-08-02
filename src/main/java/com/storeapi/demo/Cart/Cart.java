@@ -1,12 +1,15 @@
 package com.storeapi.demo.Cart;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 @Entity
 public class Cart {
 	
 	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int CartId;
 	private int CustomerId;
 	private String Title;

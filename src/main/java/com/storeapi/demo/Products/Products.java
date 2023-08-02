@@ -1,15 +1,22 @@
 package com.storeapi.demo.Products;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.Lob;
 
 @Entity
 public class Products {
 	
 	@Id
+	@GeneratedValue(strategy = GenerationType.SEQUENCE)
 	private int ProductId;
 	private String Title;
 	private Float Price;
+	@Lob 
+	@Column(name="CONTENT", length=512)
 	private String Description;
 	private String Category;
 	private String Image;
@@ -102,6 +109,11 @@ public class Products {
 		return "Products [ProductId=" + ProductId + ", Title=" + Title + ", Price=" + Price + ", Description="
 				+ Description + ", Category=" + Category + ", Image=" + Image + ", Rating=" + Rating + ", Count="
 				+ Count + "]";
+	}
+
+	public Object get() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 	
 }

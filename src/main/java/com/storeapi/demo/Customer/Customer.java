@@ -1,12 +1,15 @@
 package com.storeapi.demo.Customer;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 @Entity
 public class Customer {
 	
 	@Id
+	@GeneratedValue(strategy = GenerationType.SEQUENCE)
 	private int CustomerId;
 	private String FirstName;
 	private String LastName;
