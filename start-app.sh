@@ -7,13 +7,13 @@ sudo pkill -f StoreAPI.jar
 
 ################ BACKUP OLD JAR ####################
 echo "Backup old jar"
-sudo mv /jenkins/workspace/Ishop_JAVA_API/target/StoreAPI.jar /jenkins/backup/StoreAPI.jar_$(date +%F-%H:%M:%S).jar
+sudo mv /jenkins/release/StoreAPI.jar /jenkins/backup/StoreAPI.jar_$(date +%F-%H:%M:%S).jar
 
 
 ################ START NEW JAR ####################
 echo "Starting new application"
-mv /jenkins/staging/StoreAPI.jar /jenkins/workspace/Ishop_JAVA_API/target
-cd /jenkins/workspace/Ishop_JAVA_API/target
+mv /jenkins/staging/StoreAPI.jar /jenkins/release
+cd /jenkins/release
 sudo java -jar StoreAPI.jar &
 
 echo "Sleep 5 sec"
