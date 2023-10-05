@@ -11,7 +11,8 @@ sudo mv /jenkins/workspace/Ishop_JAVA_API/target/StoreAPI.jar /jenkins/backup/St
 
 
 ################ START NEW JAR ####################
-echo "Start new application"
+echo "Starting new application"
+mv /jenkins/staging/StoreAPI.jar /jenkins/workspace/Ishop_JAVA_API/target
 cd /jenkins/workspace/Ishop_JAVA_API/target
 sudo java -jar StoreAPI.jar &
 
