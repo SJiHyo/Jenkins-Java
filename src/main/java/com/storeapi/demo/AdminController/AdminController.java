@@ -1,5 +1,7 @@
 package com.storeapi.demo.AdminController;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -24,5 +26,11 @@ public class AdminController {
 	public Admin saveAdmin(@RequestBody Admin admin) {
 		adminRepository.save(admin);
 		return admin;
+	}
+	
+	@GetMapping("/getAllAdmins")
+	public List<Admin> getAllAdmins(){
+		List<Admin> adminList = adminRepository.findAll();
+		return adminList;
 	}
 }
