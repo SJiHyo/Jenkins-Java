@@ -1,14 +1,18 @@
 [
 	{
+		"category_id": 1,
 		"category": "Jewelery"
 	},
 	{
+		"category_id": 2,
 		"category": "Electronics"
 	},
 	{
+		"category_id": 3,
 		"category": "Men's Clothing"
 	},
 	{
+		"category_id": 4,
 		"category": "Women's Clothing"
 	}
 ]

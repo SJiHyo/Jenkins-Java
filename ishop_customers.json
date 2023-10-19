@@ -1,5 +1,6 @@
 [
 	{
+		"customer_id": 1,
 		"first_name": "Pushpa",
 		"last_name": "K",
 		"user_name": "pushpa",
@@ -11,6 +12,7 @@
 		"date_of_birth": "1978-01-02"
 	},
 	{
+		"customer_id": 2,
 		"first_name": "Nani",
 		"last_name": "K",
 		"user_name": "nani",

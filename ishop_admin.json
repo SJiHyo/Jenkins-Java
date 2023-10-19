@@ -1,5 +1,6 @@
 [
 	{
+	"user_id": 1,
     "first_name": "Pushpa",
     "last_name": "K",
     "password": "pushpa",
@@ -7,6 +8,7 @@
     "email": "pushpa@gmail.com"
 	},
 	{
+	"user_id": 2,
     "first_name": "Nani",
     "last_name": "K",
     "password": "nani",
