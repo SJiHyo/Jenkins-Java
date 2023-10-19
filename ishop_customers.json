@@ -1,0 +1,24 @@
+[
+	{
+		"first_name": "Pushpa",
+		"last_name": "K",
+		"user_name": "pushpa",
+		"password": "pushpa",
+		"gender": "Female",
+		"email": "pushpa@gmail.com",
+		"mobile": "9875632410",
+		"address": "Nellore",
+		"date_of_birth": "1978-01-02"
+	},
+	{
+		"first_name": "Nani",
+		"last_name": "K",
+		"user_name": "nani",
+		"password": "nani",
+		"gender": "Male",
+		"email": "nani@gmail.com",
+		"mobile": "8686507680",
+		"address": "Nellore",
+		"date_of_birth": "1995-10-12"
+	}
+]
