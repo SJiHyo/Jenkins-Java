@@ -3,7 +3,6 @@ package com.storeapi.demo.CustomerController;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -14,7 +13,6 @@ import com.storeapi.demo.Customer.Customer;
 import com.storeapi.demo.CustomerRepository.CustomerRepository;
 
 @RestController
-@CrossOrigin(origins ="*")
 public class CustomerController {
 	@Autowired
 	private CustomerRepository customerRepository;
