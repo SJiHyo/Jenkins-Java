@@ -1,18 +1,16 @@
 [
 	{
-	"user_id": 1,
-    "first_name": "Pushpa",
-    "last_name": "K",
+    "firstName": "Pushpa",
+    "lastName": "K",
     "password": "pushpa",
-    "user_name": "pushpa",
+    "userName": "pushpa",
     "email": "pushpa@gmail.com"
 	},
 	{
-	"user_id": 2,
-    "first_name": "Nani",
-    "last_name": "K",
+    "firstName": "Nani",
+    "lastName": "K",
     "password": "nani",
-    "user_name": "nani",
+    "userName": "nani",
     "email": "nani@gmail.com"
 	}
 ]
