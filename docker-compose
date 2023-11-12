@@ -1,0 +1,24 @@
+version: "3"
+services:
+  ishop-app:
+    image: ishop-app
+    restart: always
+    build: .
+    ports:
+      - 6500:6500
+    environment:
+      MYSQL_HOST: ishop-db
+      MYSQL_USER: root
+      MYSQL_PASSWORD: root
+      MYSQL_PORT: 3306
+
+  mysqldb:
+    container_name: ishop-db
+    image: mysql
+    volumes:
+      -  /home/nani/ishop-db:/var/lib/mysql
+    ports:
+      - 3307:3306
+    environment:
+      MYSQL_DATABASE: ishop
+      MYSQL_ROOT_PASSWORD: root
