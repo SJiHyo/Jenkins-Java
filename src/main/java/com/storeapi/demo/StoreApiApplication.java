@@ -19,7 +19,11 @@ public class StoreApiApplication {
 			
 			@Override
 			public void addCorsMappings(CorsRegistry reg) {
-				reg.addMapping("/*").allowedOrigins("*");
+				reg.addMapping("/**")
+				   .allowedOrigins("*")
+				   .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
+				   .allowedHeaders("*");
+
 			}
 		};
 	}
